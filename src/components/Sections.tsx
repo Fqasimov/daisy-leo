@@ -34,10 +34,10 @@ export function Daisy({ className = 'daisy' }: { className?: string }) {
 }
 
 const NOTE_POS = [
-  { x: 73, y: 12 },
-  { x: 47, y: 42 },
-  { x: 79, y: 36 },
-  { x: 24, y: 72 },
+  { x: 73, y: 17 },
+  { x: 47, y: 60 },
+  { x: 79, y: 51 },
+  { x: 26, y: 86 },
 ];
 
 export function Material({ locale }: { locale: Locale }) {
