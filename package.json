@@ -1,0 +1,41 @@
+{
+  "name": "daisy-leo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out",
+    "typecheck": "tsc --noEmit",
+    "images": "node scripts/build-images.mjs",
+    "logo": "node scripts/trace-logo.mjs",
+    "remotion:studio": "remotion studio src/remotion/index.ts",
+    "remotion:render-intro": "remotion render src/remotion/index.ts LogoIntro out-video/daisy-leo-intro.mp4",
+    "stills": "node scripts/render-stills.mjs",
+    "preview": "PREVIEW=1 NEXT_PUBLIC_PREVIEW=1 next build && node scripts/build-preview.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/hanken-grotesk": "^5.3.0",
+    "@fontsource/gloock": "^5.3.0",
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/paths": "^4.0.539",
+    "@remotion/player": "^4.0.539",
+    "@remotion/three": "^4.0.539",
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.539",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.539",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "potrace": "^2.1.8",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2"
+  }
+}
